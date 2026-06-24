@@ -29,7 +29,7 @@ export interface FormData {
 }
 
 export const sendContactEmail = async (payload: ContactEmailPayload): Promise<Response> => {
-  const response = await fetch('https://contact-form.up.railway.app/api/sendContactEmail', {
+  const response = await fetch('https://contact-faruk-khan.vercel.app/api/sendContactEmail', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
@@ -55,7 +55,7 @@ export interface PartialFormPayload {
 }
 
 export const sendPartialFormData = async (payload: PartialFormPayload): Promise<Response> => {
-  const response = await fetch('https://contact-form.up.railway.app/api/sendPartialFormData', {
+  const response = await fetch('https://contact-faruk-khan.vercel.app/api/sendPartialFormData', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
@@ -222,7 +222,7 @@ export interface AvailableSlotsResponse {
 export const getEventTypes = async (): Promise<EventTypesResponse> => {
   try {
     console.log('🌐 Making API call to getEventTypes...')
-    const response = await fetch('https://contact-form.up.railway.app/api/getEventTypes', {
+    const response = await fetch('https://contact-faruk-khan.vercel.app/api/getEventTypes', {
       method: 'GET',
       headers: {
         'Content-Type': 'application/json',
@@ -263,7 +263,7 @@ export interface AvailableTimesParams {
 //   try {
 //     console.log('🔄 Creating Cal.com booking:', bookingData)
     
-//     const response = await fetch('https://contact-form.up.railway.app/api/createCalcomBooking', {
+//     const response = await fetch('https://contact-faruk-khan.vercel.app/api/createCalcomBooking', {
 //       method: 'POST',
 //       headers: {
 //         'Content-Type': 'application/json',
@@ -291,7 +291,7 @@ export interface AvailableTimesParams {
 //   try {
 //     console.log('🌐 Making API call to getAvailableTimes with params:', params)
     
-//     const response = await fetch('https://contact-form.up.railway.app/api/getAvailableTimes', {
+//     const response = await fetch('https://contact-faruk-khan.vercel.app/api/getAvailableTimes', {
 //       method: 'POST',
 //       headers: {
 //         'Content-Type': 'application/json',

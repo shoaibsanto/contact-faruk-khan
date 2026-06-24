@@ -188,7 +188,7 @@ export default function ContactForm() {
         message: `Full Name: ${formData.fullName}\nEmail Address: ${formData.email}\nMobile/WhatsApp: ${formData.phone}\nWhat Services are you Interested In: ${formData.services.join(', ')}\nWhat is your Primary Goal: ${displayGoal}\nWebsite: ${formData.websiteUrl || 'Not provided'}\nMonthly Budget Range: ${displayBudget}\nHow did you hear about us?: ${formData.howHeard || 'Not specified'}`,
       }
 
-      const response = await fetch('https://contact-form.up.railway.app/api/sendContactEmail', {
+      const response = await fetch('https://contact-faruk-khan.vercel.app/api/sendContactEmail', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
