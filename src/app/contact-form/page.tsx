@@ -198,7 +198,7 @@ const handleSubmit = async (e: React.FormEvent) => {
       message: `Full Name: ${formData.fullName}\nEmail Address: ${formData.email}\nMobile/WhatsApp: ${formData.phone}\nWebsite: ${formData.websiteUrl || 'Not provided'}\nWhere did you hear about us?: ${formData.howHeard || 'Not specified'}\nPrimary Goal: ${displayGoal}\nBudget Range: ${displayBudget}\nServices Interested In: ${formData.services.join(', ')}`,
     }
 
-    const response = await fetch('/api/sendContactEmail', {
+    const response = await fetch('https://contact-form.up.railway.app/api/sendContactEmail', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
